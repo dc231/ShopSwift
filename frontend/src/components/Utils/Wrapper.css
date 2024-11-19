@@ -1,0 +1,37 @@
+.wrapper {
+    width: 100%;
+    padding: 1vmax;
+    margin: auto;
+
+}
+
+
+.wrapper-heading {
+    text-align: center;
+    font-size: 2vw;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    padding: 1vmax;
+    margin: 5vmax auto;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.wrapper-container {
+
+    height: auto;
+    display: flex;
+    margin: auto;
+    gap: 2vmax;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    margin: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper-heading {
+        font-size: 2.5vw;
+    }
+
+}

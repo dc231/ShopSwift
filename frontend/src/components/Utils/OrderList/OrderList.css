@@ -1,0 +1,113 @@
+.orders_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.orders_container-search {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: fit-content;
+    margin: 1rem 1.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+.orders_container-search svg {
+    color: gray;
+}
+
+.orders_container-search input {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 20rem;
+    font-size: 1.125rem;
+}
+.orders_container-table {
+    padding: 0.25rem 1.25rem;
+    height: 65vh;
+    overflow: hidden;
+}
+.table-row {
+    padding: 0.25rem 1rem;
+    display: flex;
+    border-bottom: 2px solid rgb(210, 207, 207);
+    background-color: white;
+    border-radius: 0.125rem;
+    gap: 1rem;
+}
+.heading {
+    font-weight: 500;
+    margin: 0;
+}
+
+#order_id {
+    width: 30%;
+    overflow: hidden;
+}
+#order_date {
+    width: 30%;
+    overflow: hidden;
+}
+#order_amount {
+    width: 20%;
+    overflow: hidden;
+}
+#order_status {
+    width: 19%;
+    overflow: hidden;
+}
+#order_more {
+    width: 2rem !important;
+    aspect-ratio: 1/1;
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-primary);
+}
+#order_more:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-primary);
+}
+.order {
+    margin: auto;
+    font-size: 1em;
+}
+.orders .table-row:hover {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+.orders {
+    height: 100%;
+    overflow-y: scroll;
+}
+.order_more-options {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    background-color: rgb(253, 232, 232);
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.order_more-options a {
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+}
+.order_more-options a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+    .heading,
+    .order {
+        font-size: 2.5vw;
+    }
+}

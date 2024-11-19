@@ -1,0 +1,158 @@
+.payment_info-container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 2rem auto;
+    display: grid;
+    place-items: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.5rem;
+}
+
+.payment-detail {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+.payment-detail > h3 {
+    font-size: 2rem;
+}
+.payment-detail > p {
+    margin: 1rem 0;
+}
+
+.payment_form {
+    width: 100%;
+    height: 100%;
+}
+
+.payment_form > p {
+    font: 400 2.5vmax 'Roboto';
+    color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1vmax 0;
+
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.payment-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    margin: 1.75rem 0;
+}
+
+.payment-field > svg {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1vmax;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.paymentInput {
+    padding: 1rem 3rem;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    border-radius: 4px;
+    font: 300 2vmax cursive;
+    outline: none;
+}
+.payment_form-lower {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.payment_form-lower > div {
+    display: flex;
+}
+.payment_form-btn {
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    width: 100%;
+    font: 400 1rem 'Roboto';
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.payment_form-btn:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.payment-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.payment-info-field p {
+    font-size: 1.2rem;
+}
+
+.payment-info-price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.payment-info-field > div {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.payment-info-field > div > svg {
+    color: green;
+}
+.payment-info-field > div > span {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.payment-info-field > div:last-child {
+    margin: 0.5rem 0;
+    max-width: 80%;
+    color: rgb(92, 86, 86);
+}
+@media screen and (max-width: 768px) {
+    .payment_info-container {
+        grid-template-columns: 1fr;
+    }
+    .payment_form {
+        width: 90%;
+    }
+
+    .payment_form > p {
+        font: 400 8vw 'Roboto';
+        padding: 4vw 0;
+        width: 60%;
+    }
+
+    .payment_form > div {
+        display: flex;
+        align-items: center;
+    }
+    .payment-field {
+        margin: 4vw 0;
+    }
+
+    .paymentInput {
+        padding: 4vw 8vw;
+    }
+
+    .paymentInput > div > svg {
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,74 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin: 1rem;
+}
+.card-analytics {
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 16rem;
+    height: 8rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-primary);
+    cursor: pointer;
+}
+.card-analytics:hover {
+    background-color: var(--color-primary);
+}
+.card-analytics:hover .card-analytics_value {
+    transition: var(--transition-primary);
+    color: white;
+}
+
+.card-analytics > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+.card-analytics_name {
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.card-analytics > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+}
+.card-analytics > div:last-child > p {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 0.5vw;
+    justify-content: space-between;
+}
+.card-analytics_value {
+    font-size: 1.75rem !important;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+.increase {
+    color: green;
+}
+.sales-graph {
+    margin: auto;
+    padding: 1rem;
+    height: 55vh;
+    width: 90%;
+}

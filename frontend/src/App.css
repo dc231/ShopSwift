@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+    --color-primary: #f47458;
+    --transition-primary: all 300ms linear;
+}
+
+/* //Chrome and Other */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+    color: black;
+    text-emphasis: none;
+}
+li {
+    list-style: none;
+}
+.errors {
+    color: red;
+    margin: 2rem;
+    font-weight: bold;
+}
+.btns {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    background: transparent;
+    border: none;
+    border: 0.6px solid var(--color-primary);
+    border-radius: 5px;
+    color: #323232;
+    cursor: pointer;
+    width: max-content;
+}
+
+.noReviews {
+    margin-top: 2rem;
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.loader {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.1rem solid #fff;
+    border-bottom-color: var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.75s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

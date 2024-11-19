@@ -1,0 +1,104 @@
+.infoCard {
+    width: 23rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 0.8vmax;
+    background-color: #eef3f3;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.block-1 {
+    height: 17rem;
+    overflow: hidden;
+}
+
+.title {
+    padding: 2vmax;
+    padding-bottom: 1vmax;
+    font-weight: 500;
+    color: rgb(54, 52, 52);
+    font-size: 2rem;
+}
+
+.desc {
+    padding: 0 3vmax;
+    font-size: 1.2rem;
+}
+
+.block-2 {
+    height: 18rem;
+    overflow: hidden;
+}
+
+.block-2 > img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 18rem;
+    transition: all 250ms ease-in;
+}
+
+.infoCard:hover img {
+    scale: 1.18;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-container {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        padding: 3vmax;
+        gap: 2.5vmax;
+        flex-wrap: wrap;
+    }
+
+    .infoCard {
+        width: 100%;
+        height: 35rem;
+    }
+
+    .block-1 {
+        height: 10rem;
+        width: 75%;
+    }
+
+    .block-2 {
+        height: 25rem;
+    }
+
+    .block-2 img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .infoCard {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .block-1 {
+        width: 90vw;
+        height: 30%;
+        margin-bottom: 1vmax;
+        display: flex;
+        flex-direction: column;
+        gap: 2vmax;
+    }
+
+    .desc,
+    .title {
+        width: 75%;
+        font-size: 4vw;
+    }
+
+    .block-2 {
+        height: 26rem;
+    }
+
+    .block-2 img {
+        height: 100%;
+    }
+}

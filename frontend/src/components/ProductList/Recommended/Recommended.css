@@ -1,0 +1,28 @@
+.recommended-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.recommended-flex {
+    display: flex;
+    margin-left: 20rem;
+    overflow-x: scroll;
+}
+
+.recommended-title {
+    margin-left: 20rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .recommended-flex,
+    .recommended-title {
+        margin-left: 1rem;
+    }
+    .recommended-flex {
+        font-size: 0.75rem;
+    }
+}

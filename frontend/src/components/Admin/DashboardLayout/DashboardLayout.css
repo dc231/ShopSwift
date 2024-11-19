@@ -1,0 +1,82 @@
+.menu_container {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    gap: 2vw;
+    padding: 0.5rem;
+    overflow: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 20vw;
+    height: 88vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    padding: 0 !important;
+    transition: var(--transition-primary);
+}
+
+.children {
+    width: 72vw;
+    height: 88vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+}
+.sidebar .user-menus {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+.sidebar .user-menu {
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition-primary);
+}
+.sidebar .user-menu svg {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+.user-menu:hover,
+.active_menu {
+    background-color: rgba(228, 163, 163, 0.235);
+    color: var(--color-primary);
+    border: none;
+}
+.sidebar .dashboard_text {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.75rem;
+    align-items: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.dashboard_text p {
+    color: black;
+}
+
+.children h2 {
+    width: 100%;
+    height: auto;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 2px solid rgb(186, 184, 184);
+    color: rgb(78, 77, 77);
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .children {
+        width: 95vw;
+    }
+}

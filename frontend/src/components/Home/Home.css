@@ -1,0 +1,248 @@
+.banner {
+    position: relative;
+    height: 50vmax;
+    width: 100%;
+}
+
+.m1 {
+    background-color: rgb(173, 199, 214);
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.m2 {
+    position: absolute;
+    top: 6vmax;
+    right: 10vmax;
+    z-index: 2;
+    height: 12vmax;
+    width: 17vmax;
+    z-index: -1;
+}
+
+.m3 {
+    position: absolute;
+    z-index: -1;
+    top: 14vmax;
+    right: 28vmax;
+    z-index: 2;
+    height: 14vmax;
+    width: 14vmax;
+}
+
+.m4 {
+    position: absolute;
+    z-index: -1;
+    top: 22vmax;
+    right: 15vmax;
+    z-index: 2;
+    height: 12vmax;
+    width: 15vmax;
+}
+
+.m5 {
+    position: absolute;
+    z-index: -1;
+    top: 26vmax;
+    right: 39vmax;
+    z-index: 2;
+    height: 9vmax;
+    width: 15vmax;
+}
+
+.details {
+    width: 30%;
+    position: absolute;
+    top: 15vmax;
+    z-index: 5;
+    left: 10vmax;
+}
+
+.details > span {
+    font-weight: bold;
+    color: rgb(61, 45, 42);
+    font-size: 3vmax;
+}
+
+.details > p {
+    margin: 1vmax 0;
+    font: 300 1.5vmax 'Lucida Sans';
+}
+
+.details > a > button {
+    z-index: 5;
+    margin-bottom: 5vmax;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.25vmax;
+    width: 9vmax;
+    padding: 1vmax;
+    transition: 500ms ease;
+    font: 500 1vmax 'Roboto';
+}
+
+.details > a > button:hover {
+    background: transparent;
+    color: white;
+}
+
+.homeHeading {
+    text-align: center;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80%;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.product-container-wrapper {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    margin: auto;
+}
+
+/* 
+.productCard>img {
+    width: 14vmax;
+} */
+
+/* .productCard>div {
+    margin: 0 .5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productNumOfReviews {
+    margin: .5vmax 0.5vmax;
+    font: 300 .7vmax "Roboto";
+}
+
+.productCard>p {
+    margin: 0.5vmax;
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+}
+
+.productCard>span {
+    margin: .5vmax;
+    color: var(--color-primary);
+    font-size: 1vmax;
+} */
+
+@media screen and (max-width: 1024px) {
+    .product-container-wrapper {
+        width: 90%;
+    }
+
+    .banner {
+        position: relative;
+        height: 45vw;
+        width: 100%;
+    }
+
+    .m1 {
+        background-color: rgb(173, 199, 214);
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .m2 {
+        position: absolute;
+        top: 6vw;
+        right: 10vw;
+        z-index: 2;
+        height: 12vw;
+        width: 17vw;
+        z-index: -1;
+    }
+
+    .m3 {
+        position: absolute;
+        z-index: -1;
+        top: 14vw;
+        right: 28vw;
+        z-index: 2;
+        height: 14vw;
+        width: 14vw;
+    }
+
+    .m4 {
+        position: absolute;
+        z-index: -1;
+        top: 22vw;
+        right: 15vw;
+        z-index: 2;
+        height: 12vw;
+        width: 15vw;
+    }
+
+    .m5 {
+        position: absolute;
+        z-index: -1;
+        top: 26vw;
+        right: 39vw;
+        z-index: 2;
+        height: 9vw;
+        width: 15vw;
+    }
+
+    .details {
+        width: 30%;
+        position: absolute;
+        top: 15vw;
+        z-index: 5;
+        left: 10vw;
+    }
+
+    .details > span {
+        font-weight: bold;
+        color: rgb(61, 45, 42);
+        font-size: 3vw;
+    }
+
+    .details > p {
+        margin: 1vw 0;
+        font: 300 1.5vw 'Lucida Sans';
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .productCard > p {
+        font-size: 1.6vmax;
+    }
+
+    .productCard > div {
+        margin: 0vmax;
+        display: block;
+    }
+
+    .productCard > span {
+        margin: 0.5vmax;
+    }
+
+    .productNumOfReviews {
+        margin: 0 0.5vmax;
+        font: 300 1vmax 'Roboto';
+    }
+}

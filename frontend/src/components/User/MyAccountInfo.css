@@ -1,0 +1,84 @@
+.account-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+.user-img {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem 0 0 1rem;
+}
+
+.user-img > img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.edit-img {
+    top: 5rem;
+    right: 0rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.personal-info {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.personal-info > div {
+    width: 40%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.personal-info > div > h4 {
+    color: rgb(92, 86, 86);
+    padding: 0.5rem 0.125rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+}
+.gender_radio {
+    display: flex;
+    gap: 1.25rem;
+}
+.gender_radio span {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    gap: 0.25rem;
+}
+
+.personal-info > div > p {
+    color: rgb(55, 55, 55);
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 768px) {
+    .personal-info > div {
+        width: 90%;
+    }
+}

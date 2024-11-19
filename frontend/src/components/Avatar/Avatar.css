@@ -1,0 +1,15 @@
+.user_avatar {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.lg {
+    height: 3rem;
+    width: 3rem;
+}
+.xl {
+    height: 3.5rem;
+    width: 3.5rem;
+}

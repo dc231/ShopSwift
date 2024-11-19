@@ -1,0 +1,94 @@
+.addProductContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.175);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 2rem 4rem;
+}
+
+.addProductForm>h1 {
+    margin-bottom: 2rem;
+}
+
+.addProductForm {
+    width: 75%;
+}
+
+
+.addProductForm>div {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    gap: .5rem;
+}
+
+.extra-info {
+    color: gray;
+    font-size: .8rem;
+}
+
+.form-input {
+    display: flex;
+    position: relative;
+
+}
+
+.form-input>svg {
+    position: absolute;
+    top: .75rem;
+    left: .5rem;
+}
+
+.form-input>input, .form-input>select, .form-input>textarea {
+    font-size: 1.15rem;
+    padding: .7rem;
+    padding-left: 2.5rem;
+    width: 100%;
+}
+
+.media {
+    display: flex;
+}
+
+.addMediaFiles, .addMediaFiles>label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 6rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+
+}
+
+.addMediaFiles>label>svg {
+    font-size: 32px;
+}
+
+#addProductFormImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addProductFormImage>img {
+    height: 8rem;
+    padding: .5rem;
+    width: 8rem;
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .addProductContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .addProductForm {
+        width: 100%;
+    }
+}

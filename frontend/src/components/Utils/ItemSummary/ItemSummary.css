@@ -1,0 +1,37 @@
+.heading {
+    font-weight: 500;
+    margin: 0;
+}
+
+#order_id {
+    width: 30%;
+    overflow: hidden;
+}
+#order_date {
+    width: 30%;
+    overflow: hidden;
+}
+#order_amount {
+    width: 20%;
+    overflow: hidden;
+}
+#order_status {
+    width: 19%;
+    overflow: hidden;
+}
+#order_more {
+    width: 2rem !important;
+    aspect-ratio: 1/1;
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-primary);
+}
+#order_more:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-primary);
+}

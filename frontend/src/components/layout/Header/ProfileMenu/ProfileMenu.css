@@ -1,0 +1,12 @@
+.navbar-sidebar-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.navbar-sidebar-user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}

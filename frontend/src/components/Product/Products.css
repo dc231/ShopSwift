@@ -1,0 +1,155 @@
+.productHeading {
+    margin: 2vmax auto;
+    padding: 0 3rem;
+    font: 600 1.5vmax 'Roboto';
+}
+.products-sidebar > button {
+    border: none;
+    background-color: transparent;
+    gap: 0;
+}
+.products-container {
+    width: 95%;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+}
+
+.products-sidebar {
+    width: 28rem;
+    display: flex;
+    min-height: 50vh;
+    padding: 1rem;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.8);
+    border-right: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.filter-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+}
+.filter-option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.selected-filters {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    /* margin: 1rem 0; */
+    align-items: flex-start;
+}
+.selected-filters > li {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 0.5vw 1vw;
+    border-radius: 4rem;
+}
+.selected-filters > li > svg {
+    cursor: pointer;
+}
+.filter-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    margin: 2rem 1rem;
+    width: 80%;
+}
+.filter-container > li {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    font-size: small;
+}
+.ratingFilter,
+.categoryFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.filterLabel {
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.ratingFilter > div,
+.categoryFilter > div {
+    padding: 0 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.priceFilter > div {
+    margin: auto;
+    padding: 1vw;
+}
+.filter_btn {
+    border: none;
+    outline: none;
+}
+.filter_btn > span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.current_products_filter {
+    padding: 2px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+}
+.current_products_filter .filter-container {
+    /* margin-left: 4rem; */
+    width: 90%;
+    display: flex !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+    margin: 0 !important;
+    padding: 0.5rem 1rem;
+}
+
+.products-main div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-direction: row !important;
+}
+
+@media screen and (max-width: 768px) {
+    .products-container {
+        gap: 0;
+    }
+    .products-sidebar {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .products-sidebar > ul {
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    .products-main > div:last-child {
+        width: 95vw;
+    }
+
+    .productHeading {
+        font: 600 4vw 'Roboto';
+    }
+}
